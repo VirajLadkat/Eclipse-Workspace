@@ -1,0 +1,4 @@
+@EndUserText.label: 'KGFlexx Dispatch Report'
+define service ZSD_KGF_DISPATCH {
+  expose ZC_KGF_DISPATCH as DispatchReport;
+}

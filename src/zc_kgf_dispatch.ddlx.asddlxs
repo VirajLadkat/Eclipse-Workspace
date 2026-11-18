@@ -1,0 +1,117 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: {
+  typeName:       'Dispatch Report',
+  typeNamePlural: 'Dispatch Reports',
+  title:          { value: 'DeliveryDocument' },
+  description:    { value: 'MaterialCode'     }
+}
+
+annotate view ZC_KGF_DISPATCH with
+{
+  // -- Keys + Selection Fields combined
+  @UI: {
+    selectionField: [{ position: 30 }],
+    lineItem:       [{ position: 10, label: 'Sales Order' }]
+  }
+  SalesOrder;
+
+  @UI.lineItem: [{ position: 20, label: 'Sales Order Item' }]
+  SalesOrderItem;
+
+  @UI: {
+    selectionField: [{ position: 40 }],
+    lineItem:       [{ position: 30, label: 'Delivery Number' }]
+  }
+  DeliveryDocument;
+
+  @UI.lineItem: [{ position: 40, label: 'Delivery Item' }]
+  DeliveryDocumentItem;
+
+  @UI: {
+    selectionField: [{ position: 20 }],
+    lineItem:       [{ position: 50, label: 'Delivery Date' }]
+  }
+  DeliveryDate;
+
+  @UI.lineItem: [{ position: 60, label: 'Material Code' }]
+  MaterialCode;
+
+  @UI.lineItem: [{ position: 70, label: 'Roll Number' }]
+  RollNumber;
+
+  @UI.lineItem: [{ position: 80, label: 'Material Group' }]
+  MaterialGroup;
+
+  @UI.lineItem: [{ position: 90, label: 'Length' }]
+  Length;
+
+  @UI.lineItem: [{ position: 100, label: 'Width' }]
+  Width;
+
+  @UI.lineItem: [{ position: 110, label: 'OD' }]
+  OD;
+
+  @UI.lineItem: [{ position: 120, label: 'Core ID' }]
+  CoreID;
+
+  @UI.lineItem: [{ position: 130, label: 'Treatment' }]
+  Treatment;
+
+  @UI.lineItem: [{ position: 140, label: 'Gross Weight' }]
+  GrossWeight;
+
+  @UI.lineItem: [{ position: 150, label: 'Net Weight' }]
+  NetWeight;
+
+  @UI.lineItem: [{ position: 160, label: 'Remark' }]
+  Remark;
+
+  @UI.lineItem: [{ position: 170, label: 'Grade' }]
+  Grade;
+
+  @UI.lineItem: [{ position: 180, label: 'Packing Mode' }]
+  PackingMode;
+
+  @UI.lineItem: [{ position: 190, label: 'Storage Location' }]
+  StorageLocation;
+
+  @UI.lineItem: [{ position: 200, label: 'Billing Number' }]
+  BillingNumber;
+
+  @UI.lineItem: [{ position: 210, label: 'Billing Date' }]
+  BillingDate;
+
+  @UI.lineItem: [{ position: 220, label: 'Date of Manufacture' }]
+  DateOfManufacture;
+
+  @UI.lineItem: [{ position: 230, label: 'Sold To Party' }]
+  SoldToParty;
+
+  @UI.lineItem: [{ position: 240, label: 'Ship To Party' }]
+  ShipToParty;
+
+  @UI.lineItem: [{ position: 250, label: 'Destination' }]
+  Destination;
+
+  @UI.lineItem: [{ position: 260, label: 'Vehicle Number' }]
+  VehicleNumber;
+
+  @UI.lineItem: [{ position: 270, label: 'Container Number' }]
+  ContainerNumber;
+
+  @UI.lineItem: [{ position: 280, label: 'Distribution Channel' }]
+  DistributionChannel;
+
+  @UI.lineItem: [{ position: 290, label: 'Dist. Channel Desc.' }]
+  DistributionChannelName;
+
+  @UI: {
+    selectionField: [{ position: 10 }],
+    lineItem:       [{ position: 300, label: 'Plant' }]
+  }
+  Plant;
+
+  @UI.lineItem: [{ position: 310, label: 'Sales Employee' }]
+  SalesEmployee;
+}
