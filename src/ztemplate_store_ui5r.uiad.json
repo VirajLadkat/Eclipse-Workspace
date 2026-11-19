@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Adobe Template Store"
+  },
+  "ui5AppDetails": {
+    "appId": "ztemplatestore"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_10858E084A4AAD70CABD5B445EBFC40F59A7E363_TM",
+    "semanticObject": "ztemplate_store",
+    "action": "Application",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_10858E084A4AAD70CABD5B445EBFC40F59A7E363_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Adobe Template Store",
+        "icon": "sap-icon://retail-store"
+      }
+    }
+  ]
+}

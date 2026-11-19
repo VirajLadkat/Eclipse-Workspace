@@ -1,0 +1,55 @@
+managed implementation in class ZBP_R_ADOBE_STORE000 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_ADOBE_STORE alias ZrAdobeStore
+persistent table ZDT_ADOBE_STORE
+extensible
+draft table ZDTADOBE_STORE_D
+etag master Lastchangedat
+lock master total etag Locallastchangedat
+authorization master( global )
+{
+  field ( mandatory : create )
+   Formtemplate;
+
+  field ( readonly )
+   Createdby,
+   Createdat,
+   Lastchangedby,
+   Lastchangedat,
+   Locallastchangedat;
+
+  field ( readonly : update )
+   Formtemplate;
+
+
+  create;
+  update;
+  delete;
+
+//  determination ConvertFormtemplateToUpper on modify { field Formtemplate; }
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZDT_ADOBE_STORE corresponding extensible
+  {
+    Formtemplate = FORMTEMPLATE;
+    Attachment = ATTACHMENT;
+    Mimetypexsd = MIMETYPEXSD;
+    Mimetypexdp = MIMETYPEXDP;
+    Filenamexsd = FILENAMEXSD;
+    Filenamexdp = FILENAMEXDP;
+    Zschema = ZSCHEMA;
+    Createdby = CREATEDBY;
+    Createdat = CREATEDAT;
+    Lastchangedby = LASTCHANGEDBY;
+    Lastchangedat = LASTCHANGEDAT;
+    Locallastchangedat = LOCALLASTCHANGEDAT;
+  }
+
+}

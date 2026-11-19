@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_ADOBE_STORE'
+@MappingRole: true
+define role ZC_ADOBE_STORE {
+  grant select on ZC_ADOBE_STORE
+  where INHERITING CONDITIONS FROM ENTITY ZR_ADOBE_STORE REPLACING { ROOT WITH _BaseEntity };
+}

@@ -1,0 +1,5 @@
+@EndUserText.label: 'Get Base64 XDP file'
+define service ZSD_GET_BASE64_ADOBE {
+  expose ZCE_BASE64_FORM as Get_XDP_Base64;
+  expose ZCE_BASE64_PDF  as Generate_PDF_Base64;
+}

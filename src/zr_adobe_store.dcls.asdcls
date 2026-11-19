@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_ADOBE_STORE'
+@MappingRole: true
+define role ZR_ADOBE_STORE {
+  grant select on ZR_ADOBE_STORE
+  where TRUE;
+}

@@ -1,0 +1,159 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Formtemplate'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Formtemplate'
+annotate view ZC_ADOBE_STORE with
+{
+  @EndUserText.label: 'Form Template'
+  @UI.facet: [ {
+    label: 'General Information',
+    id: 'GeneralInfo',
+    purpose: #STANDARD,
+    position: 10 ,
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 ,
+    label: 'Form Template'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 ,
+    label: 'Form Template'
+  } ]
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  Formtemplate;
+
+  @UI.identification: [ {
+    position: 20
+  } ]
+  @UI.lineItem: [ {
+    position: 20
+  } ]
+  Attachment;
+
+  @EndUserText.label: 'Mimetypexsd'
+  @UI.identification: [ {
+    position: 30 ,
+    label: 'Mimetypexsd'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 ,
+    label: 'Mimetypexsd'
+  } ]
+  @UI.hidden: true
+  
+  Mimetypexsd;
+
+  @EndUserText.label: 'Mimetypexdp'
+  @UI.identification: [ {
+    position: 40 ,
+    label: 'Mimetypexdp'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 ,
+    label: 'Mimetypexdp'
+  } ]
+  @UI.hidden: true
+  Mimetypexdp;
+
+  @EndUserText.label: 'Schema File Name'
+  @UI.identification: [ {
+    position: 70 ,
+    label: 'Schema File Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 ,
+    label: 'Schema File Name'
+  } ]
+  Filenamexsd;
+
+  @EndUserText.label: 'Adobe Form File Name'
+  @UI.identification: [ {
+    position: 50 ,
+    label: 'Adobe Form File Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 ,
+    label: 'Adobe Form File Name'
+  } ]
+  
+  Filenamexdp;
+
+  @UI.identification: [ {
+    position: 60
+  } ]
+  @UI.lineItem: [ {
+    position: 60
+  } ]
+  Zschema;
+
+  @UI.identification: [ {
+    position: 80
+  } ]
+  @UI.lineItem: [ {
+    position: 80
+  } ]
+  @UI.selectionField: [ {
+    position: 80
+  } ]
+  Createdby;
+
+  @UI.identification: [ {
+    position: 90
+  } ]
+  @UI.lineItem: [ {
+    position: 90
+  } ]
+  @UI.selectionField: [ {
+    position: 90
+  } ]
+  Createdat;
+
+  @UI.identification: [ {
+    position: 100
+  } ]
+  @UI.lineItem: [ {
+    position: 100
+  } ]
+  @UI.selectionField: [ {
+    position: 100
+  } ]
+  Lastchangedby;
+
+  @UI.identification: [ {
+    position: 110
+  } ]
+  @UI.lineItem: [ {
+    position: 110
+  } ]
+  @UI.selectionField: [ {
+    position: 110
+  } ]
+  Lastchangedat;
+
+  @UI.identification: [ {
+    position: 120
+  } ]
+  @UI.lineItem: [ {
+    position: 120
+  } ]
+  @Consumption.hidden: true
+  Locallastchangedat;
+
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 130 ,
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 ,
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 130
+  } ]
+  _BaseEntity;
+}
